@@ -37,7 +37,7 @@ pipeline{
                 sonarqubeAnalysis()
             }
         }
-        stage('sonarqube QualitGate'){
+        stage('sonarqube QualityGate'){
         when { expression { params.action == 'create'}}    
             steps{
                 script{
